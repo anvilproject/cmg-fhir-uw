@@ -17,3 +17,13 @@ One of the strongest features built into Whistle is the use of FHIR [ConceptMaps
 ## Current Limitations
 There are some issues that will be added to the issues of this repository that relate to current design limitations or our current understanding of the current data model. Included in these is the potentially incomplete mapping to public ontologies and the fact that our current Implementation Guide (IG) is still a work in progress and may evolve into something different from what these whistle files are based on. 
 
+## Current Issues with Whistle Code
+### How to handle missing family members referenced
+Many (if not all) of the parents referenced by way of the mother_id and father_id do not have data associated with them (no line at all). 
+
+A few options could be use to resolve this: 
+	* Create stub patients to reference. Do we presume to know actual sex based on the column header?
+	* Create external references to what would appear to be a remote FHIR server. This would allow these references to pass FHIR validation but would not actually point to a meaningful resource
+
+### No central source for common genetic research terms
+Right now, our terms reference a hodgepodge of different NCPI and INCLUDE sourced CodeSystems for some of the terms used in our harmony file. I imagine this isn't how it should be 
