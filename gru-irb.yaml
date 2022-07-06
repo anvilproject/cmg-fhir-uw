@@ -6,6 +6,9 @@ url: https://uwcmg.org/fhir
 identifier_prefix: https://uwcmg.org/fhir
 output_filename: uwcmg-gru-irb
 id_colname: ParticipantID
+study_sponsor:
+  id: nhgri
+  name: National Human Genome Research Institute (NHGRI)
 consent_group: 
   code: GRU-IRB
   name: general research use and clinical care. ethics approval required

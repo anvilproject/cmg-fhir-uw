@@ -8,6 +8,9 @@ output_filename: uwcmg-ds-nbia
 id_colname: ParticipantID
 whistle_src: _cmg.wstl
 code_harmonization_dir: harmony
+study_sponsor:
+  id: nhgri
+  name: National Human Genome Research Institute (NHGRI)
 consent_group: 
   code: DS-NBIA
   name: Neurodegeneration with Brain Iron Accumulation
